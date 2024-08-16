@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Your form and table here -->
+        <h1>Simple Budget Tracker</h1>
+
+        <h2>Add Income</h2>
+        <form id="incomeForm">
+            <input type="number" id="incomeAmount" placeholder="Amount" required>
+            <input type="text" id="incomeDescription" placeholder="Description" required>
+            <button type="submit">Add Income</button>
+        </form>
+
+        <h2>Add Expense</h2>
+        <form id="expenseForm">
+            <input type="number" id="expenseAmount" placeholder="Amount" required>
+            <input type="text" id="expenseDescription" placeholder="Description" required>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <h2>Transactions</h2>
+        <table id="transactionTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTableBody"></tbody>
+        </table>
+    </div>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
